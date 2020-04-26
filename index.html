@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+    <!-- Custom Fonts -->
+    <link href="assets/css/common/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+</head>
+<body>
+<main>
+
+    <!--signup div-->
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form class="signUpForm">
+                <h1>Create Account</h1>
+                <span>or use your email for registration</span>
+                <input class="form-control" type="text" placeholder="User Name" name="userName" id="uName"/>
+                <input class="form-control" type="email" placeholder="Email" name="userEmail" id="uEmail"/>
+                <input class="form-control" type="password" placeholder="Password" name="userPassword" id="uPassword"/>
+                <input class="form-control" type="password" placeholder="Confirm Password" name="userConfirmPassword"
+                       id="CPassword"/>
+                <button style="margin-top: 5px;" onclick="addUser()" type="button">Sign Up</button>
+            </form>
+        </div>
+        <!--        signIN Div-->
+        <div class="form-container sign-in-container">
+            <form action="" class="loginForm">
+                <h1>Sign in</h1>
+                <span>or use your account</span>
+                <input class="form-control" type="email" placeholder="Email" name="email" id="email"/>
+                <input class="form-control" type="password" placeholder="Password" name="password" id="password"/>
+                <a style="cursor: pointer;">Forgot your password?</a>
+                <button type="button" onclick="loginCheck()">Log in</button>
+            </form>
+        </div>
+
+        <!--        Info Div-->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Login In</button>
+                </div>
+
+                <!---->
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, User!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button type="button" class="ghost" id="signUp">Sign Up</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+<script src="assets/js/jquery/jquery-3.4.1.min.js"></script>
+<script src="assets/js/bootstrap/bootstrap.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="assets/js/login.js"></script>
+<script src="assets/controller/loginController.js"></script>
+<script src="assets/controller/userController.js"></script>
+</body>
+</html>
