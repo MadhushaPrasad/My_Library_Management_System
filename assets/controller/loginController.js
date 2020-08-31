@@ -10,7 +10,7 @@ function loginCheck() {
     } else {
         var jsonConfig = {
             url: "api/services/LoginService.php?action=checkUser",
-            method: "GET",
+            method: "POST",
             data: {
                 email: email,
                 password: password

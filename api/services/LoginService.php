@@ -6,8 +6,8 @@ $method = $_SERVER['REQUEST_METHOD'];
 $loginBO = new LoginBoImpl();
 
 switch ($method) {
-    case "GET" :
-        $action = $_GET['action'];
+    case "POST" :
+        $action = $_POST['action'];
         switch ($action) {
             case 'checkUser':
                 $userEmail = $_GET["email"];

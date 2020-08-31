@@ -5,7 +5,7 @@ class DBConnection
 {
     private $host = 'localhost';
     private $userName = "root";
-    private $password = "";
+    private $password = "1234";
     private $database = "LMS";
     private $port = "3306";
 

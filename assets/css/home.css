@@ -264,8 +264,9 @@ header {
     display: inline-block;
     vertical-align: middle;
 }
+
 /*********************************************** Nav ***********************************************/
-#nav{
+#nav {
     position: fixed;
     top: 50px;
     left: 0;
@@ -278,19 +279,40 @@ header {
     z-index: auto;
     border-radius: 0 50px 50px 0;
 }
-#ulTag{
+
+#ulTag {
     position: absolute;
-    top: 58px;
+    top: 40px;
     padding-left: 15px;
     text-align: left;
 }
+
 #ulTag li {
     list-style: none;
     margin-bottom: 35px;
     color: #ffffff;
     cursor: pointer;
 }
+
 #ulTag li:hover {
     cursor: pointer;
     font-size: 20px;
+}
+
+.main-panel {
+    position: relative;
+    transition: width 0.25s ease, margin 0.25s ease;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    left: 130px;
+}
+
+/* Footer */
+.footer span {
+    color: #005cbf;
+    font-size: inherit;
 }
